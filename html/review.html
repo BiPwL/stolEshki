@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Столешки</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,500,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/review.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./catalog.html">Каталог</a></li>
+          <li><a href="./info.html">О компании</a></li>
+          <li><a href="./reviews.html">Отзывы</a></li>
+          <li><a href="./cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>Форма обратной связи</h2>
+      <form id="feedbackForm">
+        <div class="form-group">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Отзыв:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="file">Прикрепить файл:</label>
+          <input type="file" id="file" name="file" />
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div id="popup" class="popup hidden">
+      <p>Ваш отзыв отправлен</p>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./catalog.html">Каталог</a></li>
+          <li><a href="./info.html">О компании</a></li>
+          <li><a href="./reviews.html">Отзывы</a></li>
+          <li><a href="./cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <p>Режим работы: Пн-Пт, 9:00-18:00</p>
+      <p>Адрес: ул. Есенина, д. Каруселена 52</p>
+      <p>Следите за нами в соц. сетях:</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </footer>
+
+    <script src="../js/review.js"></script>
+  </body>
+</html>

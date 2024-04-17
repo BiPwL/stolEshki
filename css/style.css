@@ -1,0 +1,10 @@
+.welcome-text {
+  color: #333333;
+  margin: 50px auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.welcome-text p {
+  margin-bottom: 20px;
+}

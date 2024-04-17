@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./catalog.html">Каталог</a></li>
+        <li><a href="./info.html">О компании</a></li>
+        <li><a href="./reviews.html">Отзывы</a></li>
+        <li><a href="./cart.html">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Оформление заказа</h2>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="delivery-address">Адрес доставки:</label>
+        <input type="text" id="delivery-address" name="delivery-address">
+      </div>
+      <div class="form-group">
+        <label for="contact-info">Контактные данные:</label>
+        <input type="text" id="contact-info" name="contact-info">
+      </div>
+      <div class="form-group">
+        <label>Способ оплаты:</label>
+        <div class="radio-group">
+          <div>
+            <input type="radio" id="cash" name="payment-method" value="cash">
+            <label for="cash">Наличными при получении</label>
+          </div>
+          <div>
+            <input type="radio" id="card-on-delivery" name="payment-method" value="card-on-delivery">
+            <label for="card-on-delivery">Картой при получении</label>
+          </div>
+          <div>
+            <input type="radio" id="online-card" name="payment-method" value="online-card">
+            <label for="online-card">Картой онлайн</label>
+          </div>
+          <div>
+            <input type="radio" id="transfer" name="payment-method" value="transfer">
+            <label for="transfer">Переводом</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Оформить заказ</button>
+    </form>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <p>Ваш заказ успешно оформлен</p>
+  </div>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./catalog.html">Каталог</a></li>
+        <li><a href="./info.html">О компании</a></li>
+        <li><a href="./reviews.html">Отзывы</a></li>
+        <li><a href="./cart.html">Корзина</a></li>
+      </ul>
+    </nav>
+    <p>Режим работы: Пн-Пт, 9:00-18:00</p>
+    <p>Адрес: ул. Есенина, д. Каруселена 52</p>
+    <p>Следите за нами в соц. сетях:</p>
+    <ul class="social-links">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+
+  <script src="../js/order.js"></script>
+</body>
+</html>
